@@ -9,6 +9,10 @@ from annoy import AnnoyIndex
 import pandas as pd
 from scipy import spatial
 
+import ssl
+import os 
+
+
 def load_images_from_folder(folder):
     images = []
     for filename in os.listdir(folder):
